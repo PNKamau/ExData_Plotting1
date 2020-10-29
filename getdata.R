@@ -17,16 +17,6 @@ powerdata <- as_tibble(
 #Remove all observations and retain only those between the dates 2007-02-01 and 2007-02-02
 powerdata <- filter(powerdata, Date == "1/2/2007" | Date == "2/2/2007")
 
-#Remove all observations with missing values
-powerdata <- filter(powerdata, 
-                    Global_active_power != "?", 
-                    Global_reactive_power != "?",
-                    Voltage != "?",
-                    Sub_metering_1 != "?",
-                    Sub_metering_2 != "?",
-                    Sub_metering_3 != "?"
-)
-
 #Remove the variable Global_intensity since it is not needed
 powerdata <- select(powerdata, -Global_intensity)
 

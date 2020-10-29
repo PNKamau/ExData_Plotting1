@@ -1,0 +1,26 @@
+The following is a brief on how I proceeded with this assignment. To reproduce the results in this repo, you will need to ensure you set up the data files as discussed in this brief.
+
+Raw Data
+
+I downloaded the raw data from the ExData_Plotting1 forked repo onto my computer and unzipped it. I placed the file "household_power_consumption.txt" into a subfolder "data" within the home directory of the project folder.
+
+R Script Files Created:
+1. getdata.R - this contains the script that reads the data from the Raw txt file and prepares the data ready for plotting.
+2. functions1.R - this contains 5 functions that plot the 5 different types of charts that are needed in the output files.
+3. plot1.R, plot2.R, plot3.R and plot4.R - these are the 4 R Script files that are used to plot the 4 output files.
+4. plot1.png, plot2.png, plot3.png and plot4.png - these are the 4 files that contain the plottings. You do not need to have these files since they can be generated as discussed below.
+
+Performing the plotting
+1. The following R Script files must be placed within the home directory of the project before performing and plotting process:
+    1.1 getdata.R
+    1.2 functions.R
+    1.3 plot1.R
+    1.4 plot2.R
+    1.5 plot3.R
+    1.6 plot4.R
+2. The text file "household_power_consumption.txt" must be placed in a subfolder "data" within the home directory of the project.
+3. To produce the plots, you run the following R Script files:
+    2.1 plot1.R - this generates plot1.png
+    2.2 plot2.R - this generates plot2.png
+    2.3 plot3.R - this generates plot3.png
+    2.4 plot4.R - this generates plot4.png

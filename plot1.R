@@ -5,7 +5,7 @@ source("getdata.R")
 source("functions1.R")
 
 #Create a file device for plotting
-png(file = "plot1.png",width=480, height=480)
+png(file = "plot1.png")
 
 #Plot the histogram chart
 plothist_Global_active_power()

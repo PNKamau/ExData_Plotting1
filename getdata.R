@@ -29,11 +29,3 @@ powerdata$Date <- dmy(powerdata$Date)
 
 #convert the Time variable into proper time format
 powerdata$Time <- hms(powerdata$Time)
-
-#convert all other variables into numeric format
-powerdata$Global_active_power <- as.numeric(powerdata$Global_active_power)
-powerdata$Global_reactive_power <- as.numeric(powerdata$Global_reactive_power)
-powerdata$Voltage <- as.numeric(powerdata$Voltage)
-powerdata$Sub_metering_1 <- as.numeric(powerdata$Sub_metering_1)
-powerdata$Sub_metering_2 <- as.numeric(powerdata$Sub_metering_2)
-powerdata$Sub_metering_3 <- as.numeric(powerdata$Sub_metering_3)

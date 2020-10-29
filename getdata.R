@@ -4,10 +4,12 @@ suppressMessages(library(lubridate))
 
 #Read the data into a data frame
 powerdata <- as_tibble(
-  read.csv2(
+  read.table(
     unzip("data/exdata_data_household_power_consumption.zip", 
           "household_power_consumption.txt"
           ), 
+    sep = ";",
+    na.strings = "?",
     header = TRUE
     )
   )

@@ -87,10 +87,10 @@ plotline_Global_reactive_power <- function() {
   
   with(powerdata, 
        plot(DateTime, 
-            Voltage, 
+            Global_reactive_power, 
             type = "l", 
             xlab = "Datetime", 
-            ylab = "Voltage"
+            ylab = "Global_reactive_power"
        )
   )
   

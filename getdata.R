@@ -3,8 +3,14 @@ suppressMessages(library(tidyverse))
 suppressMessages(library(lubridate))
 
 #Read the data into a data frame
-powerdata <- as_tibble(read.csv2("data/household_power_consumption.txt", 
-                                 header = TRUE))
+powerdata <- as_tibble(
+  read.csv2(
+    unzip("data/exdata_data_household_power_consumption.zip", 
+          "household_power_consumption.txt"
+          ), 
+    header = TRUE
+    )
+  )
 
 #Remove all observations and retain only those between the dates 2007-02-01 and 2007-02-02
 powerdata <- filter(powerdata, Date == "1/2/2007" | Date == "2/2/2007")
